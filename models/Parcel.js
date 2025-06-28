@@ -9,7 +9,8 @@ const parcelSchema = new mongoose.Schema({
     total_cost: Number,
     creator_email: String,
     creation_time: String,
-    tracking_id: String
+    tracking_id: String,
+    title: String
 }, { timestamps: true });
 
 const Parcel = mongoose.model('Parcel', parcelSchema);
